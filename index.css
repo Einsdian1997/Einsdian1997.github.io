@@ -1,0 +1,149 @@
+body{
+    font-family:"Victorian LET","微软雅黑","Victorian LET";
+    text-decoration: none;
+}
+
+.bg{
+    height:600px;
+    width:1250px;
+    margin:0px;
+    padding:0px;
+    border:0px;
+    background-image:url(bg3.jpg);
+    background-size:100%;
+    background-position:center;
+    margin:0 auto;
+    padding:0;
+}
+
+.enter{
+    height:100px;
+    width:500px;
+    background:rgba(241, 249, 255, 0.466);
+    margin:0px;
+    padding:0px;
+    position:relative;
+    left: 130px;
+    bottom: 560px;
+    z-index:999;
+    font-size:80px;
+    text-align: center;
+    line-height:100px;
+    text-decoration-color: rgb(92, 186, 230);
+    border:2px solid transparent;
+    transform:rotate(-45deg);
+    animation:myfirst 2s;
+    animation-fill-mode:forwards;
+
+}
+
+a{
+    text-decoration:none;
+    text-decoration-color: white;    
+    opacity:1;
+}
+
+#index:link{
+    color: rgb(92, 186, 230);
+}
+#index:visited{
+    color: rgb(92, 186, 230);
+}
+#index:hover{
+    color: white;
+}
+
+.enter:hover{
+    border:white solid 2px;
+    opacity:0.8;
+    background-color:lightblue;
+}
+
+img{
+    opacity:0.8;
+    width:80px;
+    height:80px;
+}
+
+#微博{
+    position:relative;
+    left:420px;
+    bottom:0px;
+    animation:appear1 1s;
+    animation-delay: 1.5s;   
+    animation-fill-mode:forwards;     
+}
+
+
+#github{
+    position:relative;
+    left:500px;
+    bottom:0px;
+    animation:appear2 1s;
+    animation-delay: 2s;   
+    animation-fill-mode:forwards; 
+}
+
+#微信{
+    position:relative;
+    left:580px;
+    bottom:0px;
+    animation:appear3 1s;
+    animation-delay: 2.5s;   
+    animation-fill-mode:forwards;  
+}
+
+img:hover{
+    opacity: 0.5;
+}
+
+@keyframes myfirst{
+    from{
+        left: 130px;
+        bottom: 560px;
+        transform:rotate(-45deg);
+    }
+    to{
+        left:380px;
+        bottom:460px;
+        transform:rotate(0deg);
+    }
+}
+
+@keyframes appear1{
+    from{
+        left: 420px;
+        bottom: 0px;
+    }
+    to{
+        left:420px;
+        bottom:420px;
+    }
+}
+
+@keyframes appear2{
+    from{
+        left: 500px;
+        bottom: 0px;
+    }
+    to{
+        left:500px;
+        bottom:420px;
+    }
+}
+
+@keyframes appear3{
+    from{
+        left: 580px;
+        bottom: 0px;
+    }
+    to{
+        left:580px;
+        bottom:420px;
+    }
+}
+
+@font-face{
+    font-family: Victorian LET;
+    src:url(sketchy.woff);
+  }
