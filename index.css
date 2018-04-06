@@ -1,0 +1,180 @@
+body {
+    font-family: "sketchy", "微软雅黑", "Victorian LET";
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    animation: appear 3s;
+}
+
+.bg {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background: url(bg3.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin: 0 auto;
+    padding: 0;
+    z-index: -1;
+}
+
+.enter {
+    height: 100px;
+    width: 500px;
+    background: rgba(241, 249, 255, 0.466);
+    margin: 0px;
+    padding: 0px;
+    /* position:relative;
+    left: 130px;
+    bottom: 560px; */
+    position: relative;
+    top: 50%;
+    transform: translateY(-120%);
+    margin: 0 auto;
+    z-index: 999;
+    font-size: 80px;
+    text-align: center;
+    line-height: 100px;
+    text-decoration-color: rgb(92, 186, 230);
+    border: 2px solid transparent;
+    /* transform:rotate(-45deg); */
+    animation: myfirst 2.5s;
+    animation-fill-mode: forwards;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: white;
+    opacity: 1;
+}
+
+#index:link {
+    color: rgb(92, 186, 230);
+}
+
+#index:visited {
+    color: rgb(92, 186, 230);
+}
+
+#index:hover {
+    color: white;
+}
+
+.enter:hover {
+    border: white solid 2px;
+    opacity: 0.8;
+    background-color: lightblue;
+}
+
+img {
+    opacity: 0.8;
+    width: 80px;
+    height: 80px;
+}
+
+#微博 {
+    position: relative;
+    left: 420px;
+    top: 400px;
+    animation: appear1 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#github {
+    position: relative;
+    left: 500px;
+    top: 400px;
+    animation: appear2 1s;
+    animation-delay: 1.1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#微信 {
+    position: relative;
+    left: 580px;
+    top: 400px;
+    animation: appear3 1s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+@keyframes myfirst {
+    from {
+        left: 0px;
+        bottom: 0px;
+        transform: rotate(-45deg);
+    }
+    to {
+        top: 50%;
+        transform: translateY(-120%);
+        margin: 0 auto;
+    }
+}
+
+@keyframes appear1 {
+    from {
+        left: 420px;
+        bottom: 400px;
+        opacity: 0;
+    }
+    to {
+        left: 420px;
+        top: 275px;
+        opacity: 1;
+    }
+}
+
+@keyframes appear2 {
+    from {
+        left: 500px;
+        top: 400px;
+        opacity: 0;
+    }
+    to {
+        left: 500px;
+        top: 275px;
+        opacity: 1;
+    }
+}
+
+@keyframes appear3 {
+    from {
+        left: 580px;
+        top: 400px;
+        opacity: 0;
+    }
+    to {
+        left: 580px;
+        top: 275px;
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: sketchy;
+    src: url(sketchy.woff);
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
