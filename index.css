@@ -17,7 +17,7 @@ body {
     margin: 0px;
     padding: 0px;
     border: 0px;
-    background: url(bg3.jpg) no-repeat;
+    background: url(小鱼.jpg);
     background-size: 100%;
     background-position: center;
     margin: 0 auto;
@@ -28,7 +28,7 @@ body {
 .enter {
     height: 100px;
     width: 500px;
-    background: rgba(241, 249, 255, 0.466);
+    background: rgba(241, 249, 255, 0.7);
     margin: 0 auto;
     padding: 0px;
     position:relative;
@@ -39,8 +39,8 @@ body {
     font-size: 80px;
     text-align: center;
     line-height: 100px;
-    text-decoration-color: rgb(92, 186, 230);
-    border: 2px solid transparent;
+    text-decoration-color: rgb(255,110,151);
+    border: 2px solid rgba(15, 15, 15, 0.2);
     transform:rotate(-45deg);
     animation: myfirst 2.5s;
     animation-fill-mode: forwards;
@@ -63,15 +63,15 @@ a {
 }
 
 #index:link {
-    color: rgb(92, 186, 230);
+    color: rgb(255,110,151);
 }
 
 #index:visited {
-    color: rgb(92, 186, 230);
+    color: rgb(255,110,151);
 }
 
 #index:hover {
-    color: white;
+    color: rgb(164, 54, 168);
 }
 
 .enter:hover {
