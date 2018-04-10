@@ -16,6 +16,9 @@ a{
     position: relative;
     top:8px;
     right:3px;
+    font-family: '汉仪丫丫体简';
+    font-weight:bold;
+    background:transparent;
 }
 .sidebar {
     width: 300px;
@@ -83,8 +86,59 @@ a{
     text-align: center;
     min-height:1000px;
     animation: appear 4s;
+    font-family: '汉仪丫丫体简';
 }
 
+
+
+.object{
+    height:48px;
+    width:24.5%;
+    float:left;
+    /* background:red; */
+
+
+    background-size: 70%;
+    border-right:solid transparent 4px;
+    border-bottom:solid transparent 4px;
+    font-size:25px;
+    transition:3s;
+    /* overflow:hidden;
+    text-overflow: ellipsis; */
+
+}
+
+.line{
+    width:100%;
+    height:100px;
+    position: relative;
+    bottom:15px;
+    left:38px;
+    background:url(爱心.png) no-repeat;
+    background-size:65%;
+    opacity: 0.5;
+}
+
+.click{
+    margin:0 auto;
+    position: relative;
+    bottom:60px;
+    height:20px;
+    width:100px;
+    background: transparent;
+    cursor:pointer;
+    font-size:20px;
+}
+.block{
+    height:500px;
+    width:100%;
+    background: transparent;
+    position: relative;
+    bottom:50px;
+    left:10px;
+    animation: appear 2s;
+    display:none;
+}
 a:visited{
     color:rgb(78, 184, 219);
 }
@@ -100,30 +154,25 @@ a:hover{
     opacity: 0.5;
 }
 
-.object{
-    height:48px;
-    width:24.5%;
-    float:left;
-    background:url(卷纸.png) no-repeat;
-    background-size: 90% 400px;
-    border-right:solid transparent 4px;
-    border-bottom:solid transparent 4px;
-    font-size:25px;
-    transition:3s;
-    overflow:hidden;
-    text-overflow: ellipsis;
-
-}
-
 #目录1{
     background:url(椭圆.png) no-repeat center;
     background-size:150px;
 }
 
-.object:hover{
-    height:500px;
+#凯慧{
+    width:85%;
 }
 
+#市东{
+    width:50%;
+}
+/* .object:hover{
+    height:500px;
+} */
+
+#上外贸{
+    width:50%;
+}
 @keyframes appear{
     from{
         opacity:0;
